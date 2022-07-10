@@ -324,12 +324,27 @@ display: grid;
 grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
 justify-content: center;
 
+
 }
 
 .img:hover{
 transform:scale(1.2);
 }
-
+@media (max-width: 400px) {
+  /* .container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  } */
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    }
+    
+}
 .container{
   width: 90%;
   max-width: 1100px;
